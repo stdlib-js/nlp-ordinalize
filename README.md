@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Turn an integer into an ordinal string (e.g., `1st`, `2nd`, etc.).
+> Convert an integer to an ordinal string (e.g., `1st`, `2nd`, etc.).
 
 <section class="intro">
 
@@ -30,19 +30,35 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/nlp-ordinalize
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@esm/index.mjs';
+var ordinalize = require( '@stdlib/nlp-ordinalize' );
 ```
 
 #### ordinalize( value )
 
-Turns an integer into an ordinal string (e.g., `1st`, `2nd`, etc.).
+Converts an integer to an ordinal string (e.g., `1st`, `2nd`, etc.).
 
 ```javascript
 var out = ordinalize( '22' );
@@ -58,7 +74,7 @@ The function accepts the following `options`:
 -   **suffixOnly**: `boolean` indicating whether to return only the ordinal suffix. Default: `false`.
 -   **gender**: `string` indicating whether to use the `masculine` or `feminine` grammatical form. Default: `'masculine'`.
 
-By default, the function returns the ordinal string. To return only the ordinal suffix, set the `suffixOnly` option.
+By default, the function returns an ordinal string. To return only an ordinal suffix, set the `suffixOnly` option.
 
 ```javascript
 var out = ordinalize( '22', {
@@ -67,7 +83,7 @@ var out = ordinalize( '22', {
 // returns 'nd'
 ```
 
-By default, the function returns the ordinal string in English. To return the ordinal string in a different language, set the `lang` option.
+By default, the function returns an ordinal string in English. To return an ordinal string for a different language, set the `lang` option.
 
 ```javascript
 var out = ordinalize( '22', {
@@ -76,32 +92,45 @@ var out = ordinalize( '22', {
 // returns '22e'
 ```
 
-If the respective language differentiates between the `masculine` and `feminine` grammatical forms, the functions returns by default the ordinal string in the masculine form. To return the ordinal string in the feminine form, set the `gender` option.
+By default, if a language differentiates between masculine and feminine grammatical forms, the functions returns an ordinal string in the masculine form. To return an ordinal string in the feminine form, set the `gender` option.
 
 ```javascript
-var out = ordinalize( 7, {
-    'lang': 'es'
-};
-// returns '7ª'
-
-out = ordinalize( 7, {
+var opts = {
     'lang': 'es',
-    'gender': 'feminine'
-});
+    'gender': 'masculine'
+};
+var out = ordinalize( 7, opts );
 // returns '7º'
+
+opts.gender = 'feminine';
+out = ordinalize( 7, opts );
+// returns '7ª'
 ```
 
 </section>
 
 <!-- /.usage -->
 
-* * *
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="references">
+<section class="notes">
+
+## Notes
+
+-   The following languages are supported:
+
+    -   **en**: English.
+    -   **es**: Spanish.
+    -   **fin**: Finnish.
+    -   **fr**: French.
+    -   **de**: Dutch.
+    -   **it**: Italian.
+    -   **pt**: Portuguese.
+    -   **swe**: Swedish.
 
 </section>
 
-<!-- /.references -->
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -109,13 +138,8 @@ out = ordinalize( 7, {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@esm/index.mjs';
+```javascript
+var ordinalize = require( '@stdlib/nlp-ordinalize' );
 
 var out = ordinalize( '1' );
 // returns '1st'
@@ -124,23 +148,27 @@ out = ordinalize( 2 );
 // returns '2nd'
 
 out = ordinalize( '3', {
-	'suffixOnly': true
+    'suffixOnly': true
 });
 // returns 'rd'
 
 out = ordinalize( '3', {
-	'lang': 'de'
+    'lang': 'de'
 });
 // returns '3.'
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -159,7 +187,7 @@ out = ordinalize( '3', {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
