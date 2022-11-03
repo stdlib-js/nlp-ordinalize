@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@esm/index.mjs';
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-esm/index.mjs';
 ```
 
 #### ordinalize( value )
@@ -128,7 +128,7 @@ out = ordinalize( 7, opts );
 <body>
 <script type="module">
 
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@esm/index.mjs';
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-esm/index.mjs';
 
 var out = ordinalize( '1' );
 // returns '1st'
