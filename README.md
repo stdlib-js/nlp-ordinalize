@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@deno/mod.js';
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-deno/mod.js';
 ```
 
 #### ordinalize( value )
@@ -123,7 +123,7 @@ out = ordinalize( 7, opts );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@deno/mod.js';
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-deno/mod.js';
 
 var out = ordinalize( '1' );
 // returns '1st'
