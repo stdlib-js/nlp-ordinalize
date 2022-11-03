@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/nlp-ordinalize",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert an integer to an ordinal string (e.g., 1st, 2nd, etc.).",
   "license": "Apache-2.0",
   "author": {
