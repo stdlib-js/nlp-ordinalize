@@ -37,6 +37,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/nlp-ordinalize/tags). For example,
+
+```javascript
 import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-deno/mod.js';
 ```
 
@@ -123,7 +128,7 @@ out = ordinalize( 7, opts );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@v0.0.1-deno/mod.js';
+import ordinalize from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-ordinalize@deno/mod.js';
 
 var out = ordinalize( '1' );
 // returns '1st'
