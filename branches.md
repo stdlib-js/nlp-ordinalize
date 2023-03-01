@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/ordinalize"
-click B href "https://github.com/stdlib-js/nlp-ordinalize/tree/main"
-click C href "https://github.com/stdlib-js/nlp-ordinalize/tree/production"
-click D href "https://github.com/stdlib-js/nlp-ordinalize/tree/esm"
-click E href "https://github.com/stdlib-js/nlp-ordinalize/tree/deno"
-click F href "https://github.com/stdlib-js/nlp-ordinalize/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/ordinalize"
+%% click B href "https://github.com/stdlib-js/nlp-ordinalize/tree/main"
+%% click C href "https://github.com/stdlib-js/nlp-ordinalize/tree/production"
+%% click D href "https://github.com/stdlib-js/nlp-ordinalize/tree/esm"
+%% click E href "https://github.com/stdlib-js/nlp-ordinalize/tree/deno"
+%% click F href "https://github.com/stdlib-js/nlp-ordinalize/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/ordinalize
