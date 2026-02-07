@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/nlp-ordinalize",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Convert an integer to an ordinal string (e.g., 1st, 2nd, etc.).",
   "license": "Apache-2.0",
   "author": {
@@ -37,14 +37,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-own-property": "^0.2.2",
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/assert-is-integer": "^0.2.2",
-    "@stdlib/assert-is-plain-object": "^0.2.2",
-    "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
-    "@stdlib/utils-index-of": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/assert-has-own-property": "^0.2.3",
+    "@stdlib/assert-is-boolean": "^0.2.3",
+    "@stdlib/assert-is-integer": "^0.2.3",
+    "@stdlib/assert-is-plain-object": "^0.2.3",
+    "@stdlib/assert-is-string": "^0.2.3",
+    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/utils-index-of": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
